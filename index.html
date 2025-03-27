@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gate Pass</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gate Pass Login</h1>
+        <form id="gatePassForm">
+            <label for="idNumber">ID Number (7 digits):</label>
+            <input type="text" id="idNumber" name="idNumber" maxlength="7" required>
+            
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+            
+            <label for="birthCertificate">Birth Certificate Number (only if age > 10):</label>
+            <input type="text" id="birthCertificate" name="birthCertificate" disabled>
+            
+            <button type="submit">Submit</button>
+        </form>
+        
+        <div id="statusMessage" class="hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

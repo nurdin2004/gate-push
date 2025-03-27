@@ -1,0 +1,83 @@
+/* General body and container styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Label styling */
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Input field styling */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+/* Button styling */
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Initially hidden status message */
+.hidden {
+    display: none;
+}
+
+/* Red color for invalid or suspect inputs and messages */
+.suspect {
+    color: red;
+    font-size: 18px;
+}
+
+/* Green color for valid messages */
+.valid {
+    color: green;
+    font-size: 18px;
+}
+
+/* Styling for input fields when they are invalid */
+input.invalid {
+    border: 2px solid red;
+    background-color: #ffe6e6; /* Light red background */
+}
+
+/* Styling for input fields when they are valid */
+input.valid {
+    border: 2px solid green;
+    background-color: #e6ffe6; /* Light green background */
+}
